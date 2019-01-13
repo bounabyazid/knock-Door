@@ -6,10 +6,17 @@ Created on Fri Jan 11 22:40:16 2019
 @author: Yazid, Kein, Sari
 """
 
+#https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error
+
+#https://www.instructables.com/id/ESP32-With-ESP-Now-Protocol/
+
+
+
 from scipy.io import wavfile
 from matplotlib import pyplot as plt
 import numpy as np
 
+import test
 from fuzzywuzzy import fuzz
 
 import acoustid
@@ -50,9 +57,12 @@ FP2 = FingerPrintAudio("yazi2.wav")
 simlarity = AudioSimilarity(FP1, FP2)
 
 if simlarity >= 95:
+   test
    print ('Doore Opening')
-else:
-     print ('Fuck off')
 
-plot_wav("yazi1.wav")
-plot_wav("yazi2.wav")
+else:
+   print ('Fuck off')
+
+
+#plot_wav("yazi1.wav")
+#plot_wav("yazi2.wav")
