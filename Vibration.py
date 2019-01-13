@@ -10,6 +10,8 @@ Created on Fri Jan 11 22:40:16 2019
 
 #https://www.instructables.com/id/ESP32-With-ESP-Now-Protocol/
 
+#use i2C ESP32
+
 
 
 from scipy.io import wavfile
